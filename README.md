@@ -38,3 +38,4 @@ https://www.w3schools.com/jsref/dom_obj_event.asp
 Інтераптор JS cod (Може не понадобитись) :
 https://code.tutsplus.com/ru/tutorials/using-iterators-and-generators-in-javascript-to-optimize-code--cms-30395
 
+
