@@ -10,9 +10,11 @@ import "./App.css";
 import Routes from "./routes/Routes";
 import useAuth from "./hooks/useAuth";
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 2,
   },
   rightToolbar: {
     flexGrow: 1,
@@ -39,14 +41,14 @@ function App() {
           <Typography variant="h6" className={classes.title}>
             Real App
           </Typography>
-          <div className={classes.rightToolbar}>
-            <Button color="inherit" component={Link} to="/">
-              Home
-            </Button>
-          </div>
+          
           {auth.isLoaded &&
             (auth.user ? (
-              <>
+                      <>
+                          <div className={classes.rightToolbar}>
+                          <Button color="inherit" component={Link} to="/Lhome">
+                              Home
+                              </Button> </div>
                 <Button color="inherit" component={Link} to="/profile">
                   {auth.user.firstName} {auth.user.lastName}
                 </Button>
@@ -56,14 +58,19 @@ function App() {
                           
               </>
             ) : (
-              <>
+                          <>
+                              <div className={classes.rightToolbar}>
+                                  <Button color="inherit" component={Link} to="/Home">
+                                      Home
+                                  </Button>
+                              </div>
                 <Button color="inherit" component={Link} to="/login">
                   Login
                 </Button>
                 <Button color="inherit" component={Link} to="/registration">
                   Registration
                 </Button>
-
+                              
               </>
             ))}
         </Toolbar>

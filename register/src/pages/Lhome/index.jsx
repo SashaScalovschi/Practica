@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Home() {
+function Lhome() {
   const classes = useStyles();
 
   return (
@@ -15,16 +15,14 @@ function Home() {
         <Grid item xs={12}>
           <Typography variant="h2" gutterBottom>
             Homepage
-          </Typography>
-          <Typography variant="body1" gutterBottom>
-            This is demo app with login, registration and updating profile
-            flows.
                   </Typography>
-                  
+                 
+         
+                  <iframe src="https://archive.org/embed/msdos_Ms._Pac-Man_1983" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
         </Grid>
       </Grid>
     </Container>
   );
 }
 
-export default Home;
+export default Lhome;

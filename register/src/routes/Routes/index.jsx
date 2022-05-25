@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../../pages/Home";
+import Lhome from "../../pages/Lhome";
 import Login from "../../pages/Login";
 import Registration from "../../pages/Registration";
 import Profile from "../../pages/Profile";
@@ -26,7 +27,7 @@ function AppRoutes() {
 
   return auth.isLoaded ? (
     <Routes>
-      <Route path="/" element={<Home />} />
+          <Route path="/Lhome" element={<Lhome />} />
       <Route
         path="/profile"
         element={
@@ -46,23 +47,31 @@ function AppRoutes() {
       <Route
         path="/registration"
         element={
-          <GuestRoute>
-            <Registration />
+            <GuestRoute>
+               <Registration />
           </GuestRoute>
-        }
+        } />
+               <Route
+          path="/Home"
+          element={ <GuestRoute>
+                  <Home />
+              </GuestRoute>
+          }
       />
 
       <Route path="/not-found-404" element={<NotFound />} />
       <Route path="*" element={<Navigate to="/not-found-404" />} />
     </Routes>
   ) : (
-    <Container maxWidth="md" className={classes.root}>
+          
+          <Container maxWidth="md" className={classes.root}>
       <Grid container spacing={3} alignItems="center" justifyContent="center">
         <Grid item>
           <CircularProgress color="inherit" />
         </Grid>
       </Grid>
-    </Container>
+
+     </Container >
   );
 }
 
