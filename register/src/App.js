@@ -9,76 +9,15 @@ import { Link, useNavigate } from "react-router-dom";
 import "./App.css";
 import Routes from "./routes/Routes";
 import useAuth from "./hooks/useAuth";
+import { Header } from "./components/header";
 
-
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 2,
-  },
-  rightToolbar: {
-    flexGrow: 1,
-  },
-  title: {
-    marginRight: theme.spacing(2),
-  },
-}));
 
 function App() {
-  const classes = useStyles();
-  const auth = useAuth();
-  const navigate = useNavigate();
+  
 
-  const onLogOut = () => {
-    auth.logOut();
-    navigate("/login");
-  };
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Real App
-          </Typography>
-          
-          {auth.isLoaded &&
-            (auth.user ? (
-                      <>
-                          <div className={classes.rightToolbar}>
-                          <Button color="inherit" component={Link} to="/Lhome">
-                              Home
-                              </Button> </div>
-                <Button color="inherit" component={Link} to="/profile">
-                  {auth.user.firstName} {auth.user.lastName}
-                </Button>
-                <Button color="inherit" onClick={onLogOut}>
-                  Log out
-                   </Button>
-                          
-              </>
-            ) : (
-                          <>
-                              <div className={classes.rightToolbar}>
-                                  <Button color="inherit" component={Link} to="/Home">
-                                      Home
-                                  </Button>
-                              </div>
-                <Button color="inherit" component={Link} to="/login">
-                  Login
-                </Button>
-                <Button color="inherit" component={Link} to="/registration">
-                  Registration
-                </Button>
-                              
-              </>
-            ))}
-        </Toolbar>
-      </AppBar>
-
-      <Routes />
-    </div>
-  );
+    return (
+        <Header />
+    );
 }
 
 export default App;
