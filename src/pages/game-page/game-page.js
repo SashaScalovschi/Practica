@@ -19,7 +19,7 @@ export const GamePage = () => {
 
             src={game.game}
 
-            src={game.video}
+                      src={game.data}
 
             title="player"
                       frameBorder="0"
@@ -38,7 +38,7 @@ export const GamePage = () => {
           ))}
          
 
-          <p className="secondary-text">Популярные метки для этого продукта:</p>
+          <p className="secondary-text"></p>
           {game.genres.map((genre) => (
             <GameGenre genre={genre} key={genre} />
           ))}
