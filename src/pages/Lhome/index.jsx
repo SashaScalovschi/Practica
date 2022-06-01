@@ -14,7 +14,7 @@ function Lhome() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography variant="h2" gutterBottom>
-            Homepage
+            Home page
                   </Typography>
                  
          

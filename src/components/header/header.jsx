@@ -32,6 +32,10 @@ export const Header = () => {
                                           <Button color="inherit" component={Link} to="/Lhome">
                                               Home
                                           </Button> </div>
+                                          <Button color="inherit" component={Link} to="/game-page">
+                                          Game
+                                      </Button>
+
                                       <Button color="inherit" component={Link} to="/profile">
                                           {auth.user.firstName} {auth.user.lastName}
                                       </Button>
@@ -47,6 +51,10 @@ export const Header = () => {
                                               Home
                                           </Button>
                                       </div>
+                                      <Button color="inherit" component={Link} to="/game-page">
+                                          Game
+                                      </Button>
+
                                       <Button color="inherit" component={Link} to="/login">
                                           Login
                                       </Button>
