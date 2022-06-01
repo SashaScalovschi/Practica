@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\hooks\\useAuth",
     "\\src\\pages",
     "\\src\\pages\\game-page",
     "\\src\\pages\\Home",
-    "\\src\\pages\\home-page",
-    "\\src\\routes\\components\\GuestRoute",
-    "\\src\\services\\api",
-    "\\src\\services\\api\\endpoints"
+    "\\src\\pages\\home-page"
   ],
-  "SelectedNode": "\\src\\pages\\home-page\\home-page.js",
+  "SelectedNode": "\\src\\pages\\game-page\\game-page.js",
   "PreviewInSolutionExplorer": false
 }

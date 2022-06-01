@@ -15,8 +15,13 @@ import useAuth from "../../hooks/useAuth";
 export const Header = () => {
     const auth = useAuth();
     const navigate = useNavigate();
+    const onLogOut = () => {
+        auth.logOut();
+        navigate("/login");
+    };
   return (
     
+
       <div className="wrapper">
                  <div >
                   <AppBar position="static">
@@ -39,7 +44,7 @@ export const Header = () => {
                                       <Button color="inherit" component={Link} to="/profile">
                                           {auth.user.firstName} {auth.user.lastName}
                                       </Button>
-                                      <Button color="inherit" >
+                              <Button color="inherit" onClick={onLogOut}>
                                           Log out
                                       </Button>
 

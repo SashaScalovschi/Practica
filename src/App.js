@@ -13,9 +13,7 @@ import { Header } from "./components/header";
 
 
 function App() {
-  
-
-    return (
+      return (
         <Header />
     );
 }
