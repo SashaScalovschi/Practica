@@ -16,7 +16,7 @@ export const GamePage = () => {
       <div className="game-page__content">
         <div className="game-page__left">
           <iframe
-            src={game.video}
+            src={game.game}
             title="player"
                       frameBorder="0"
                       width="560"
@@ -27,13 +27,11 @@ export const GamePage = () => {
         <div className="game-page__right">
           <GameCover image={game.image} />
           <p>{game.description}</p>
-          <p className="secondary-text">Популярные метки для этого продукта:</p>
+          <p className="secondary-text">Популярні мітки:</p>
           {game.genres.map((genre) => (
             <GameGenre genre={genre} key={genre} />
           ))}
-          <div className="game-page__buy-game">
-            <GameBuy game={game} />
-          </div>
+         
         </div>
       </div>
     </div>
