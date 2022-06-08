@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { GameGenre } from "../game-genre";
-import { GameBuy } from "../game-buy";
 import { GameCover } from "../game-cover/game-cover";
 import { setCurrentGame } from "../../store/games/reducer";
 import "./game-item.css";
@@ -25,9 +24,9 @@ export const GameItem = ({ game }) => {
             <GameGenre genre={genre} key={genre} />
           ))}
         </div>
-        <div className="game-item__buy">
+        {/* <div className="game-item__buy">
           <GameBuy game={game} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -4,67 +4,39 @@ import './home-page.css';
 
 const GAMES = [
     {
-
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
-         id: 1,
-        description: "Вас ждёт бесконечный калейдоскоп приключений Horizon! Совершайте увлекательные поездки по невероятно красивому и самобытному миру Мексики за рулём величайших автомобилей в истории. Начните своё приключение Horizon уже сегодня, добавив игру в свой список желаний!",
+        image: '/game-covers/doom2.jpg',
+        title: 'Doom 2',
+        genres: ['Экшен', 'Шутер'],
+        game1:'https://archive.org/embed/Doom-2',
+        id: 1,
+        description: "опис",
+        
     },
     {
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
+        image: '/game-covers/-pac-man.avif',
+        title: 'Pac man',
+        genres: ['Экшен'],
+        game1:'https://archive.org/embed/msdos_Ms._Pac-Man_1983',
         id: 2,
-        description: 'Battlefield™ 2042 — это шутер от первого лица, в котором серия возвращается к легендарным масштабным сражениям. В будущем, где царит хаос, адаптируйтесь и процветайте на постоянно меняющихся полях боя благодаря своему отряду и арсеналу новейших технологий.'
+        description: "опис",
     },
     {
-               
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
+        image: '/game-covers/donkey_kong.png',
+        title: 'Donkey Kong',
+        genres: ['da'],
+        game1:'https://archive.org/embed/donkey-kong-dos',
         id: 3,
-        description: 'Алекс Чэнь от всех скрывает своё «проклятие» — сверхъестественную способность считывать сильные эмоции других и влиять на них. Но когда её брат погибает — якобы в результате несчастного случая, — Алекс использует её, чтобы узнать правду.'
+        description: "опис",
     },
     {
-
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
+        image: '/game-covers/Super_Mario_World_DX.png',
+        title: 'Super Mario World DX',
+        genres: [ 'Экшен'],
+        game1:'https://archive.org/embed/msdos_Super_Mario_World_DX_2002',
         id: 4,
-        description: ''
+        description: "опис",
     },
-    {
-
-       
-
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
-        id: 5,
-        description: 'Tom Clancy\'s Rainbow Six Осада – это продолжение нашумевшего шутера от первого лица, разработанного студией Ubisoft Montreal.'
-    },
-    {
-
-       
-        image: '',
-        title: '',
-        genres: ['Паркур', 'РПГ', 'Открытый мир'],
-        game: '',
-        data: 2020,
-        id: 6,
-        description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
-    },
+ 
 ]
 
 export const HomePage = () => {
