@@ -18,7 +18,7 @@ function Lhome() {
                   </Typography>
                  
          
-                  <iframe src="https://archive.org/embed/msdos_Ms._Pac-Man_1983" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                  {/* <iframe src="https://archive.org/embed/msdos_Ms._Pac-Man_1983" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> */}
         </Grid>
       </Grid>
     </Container>
