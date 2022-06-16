@@ -8,7 +8,6 @@ import {
   Typography,
   Snackbar,
 } from "@material-ui/core";
-import { yupResolver } from "@hookform/resolvers/yup";
 import validationSchema from "./validation";
 import api from "../../services/api";
 import useAuth from "../../hooks/useAuth";
@@ -33,7 +32,7 @@ function Profile() {
     setError,
     reset,
   } = useForm({
-    resolver: yupResolver(validationSchema),
+    resolver: validationSchema,
   });
 
   const onSubmit = async (data) => {

@@ -1,4 +1,5 @@
-import { Navigate, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
+import { Navigate } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 
 function GuestRoute({ children, ...rest }) {
@@ -6,7 +7,7 @@ function GuestRoute({ children, ...rest }) {
   const location = useLocation();
   const url = new URLSearchParams(location.search.slice(1));
 
-  return auth.user ? <Navigate to={url.get("redirect") || "/"} /> : children;
+    return auth.user ? <Navigate to={url.get("redirect") || "/"} /> : children;
 }
 
 export default GuestRoute;

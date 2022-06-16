@@ -1,6 +1,5 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "../../pages/Home";
-import Lhome from "../../pages/Lhome";
+import { Router, Route } from "react-router-dom";
+import { Navigate } from "react-router";
 import Login from "../../pages/Login";
 import Registration from "../../pages/Registration";
 import Profile from "../../pages/Profile";
@@ -26,16 +25,8 @@ function AppRoutes() {
   const auth = useAuth();
 
   return auth.isLoaded ? (
-    <Routes>
-          <Route path="/Lhome" element={<Lhome />} />
-      <Route
-        path="/profile"
-        element={
-          <PrivateRoute>
-            <Profile />
-          </PrivateRoute>
-        }
-      />
+    <Router>
+        
       <Route
         path="/login"
         element={
@@ -51,17 +42,11 @@ function AppRoutes() {
                <Registration />
           </GuestRoute>
         } />
-               <Route
-          path="/Home"
-          element={ <GuestRoute>
-                  <Home />
-              </GuestRoute>
-          }
-      />
+            
 
       <Route path="/not-found-404" element={<NotFound />} />
-      <Route path="*" element={<Navigate to="/not-found-404" />} />
-    </Routes>
+          <Route path="*" element={<Navigate to="/not-found-404" />} />
+    </Router>
   ) : (
           
           <Container maxWidth="md" className={classes.root}>
