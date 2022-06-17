@@ -32,12 +32,6 @@ export const GamePage = () => {
           {game.genres.map((genre) => (
             <GameGenre genre={genre} key={genre} />
           ))}
-
-      <div> 
-         <Link to="/" className="Return_home">
-          Головна
-        </Link>
-        </div>
          
         </div>
         
