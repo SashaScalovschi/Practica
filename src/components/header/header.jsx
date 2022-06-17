@@ -1,4 +1,6 @@
 import React from "react";
+import { Navbar } from '../../components' ;
+
 import "./header.css";
 import {
     AppBar,
@@ -7,29 +9,30 @@ import {
     Button,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
+
 export const Header = () => {
-    const auth = useAuth();
     return (
 
-       
-            <div >
-                
-                    <Toolbar>
-                        <Typography variant="h6" >
-                            Real App
-                        </Typography>
-                        <div>
-                            <Button color="inherit" component={Link} to="/">
-                                Home
-                            </Button>
-                        </div>
-                        
-
-
-        </div>
-
-
-
+        <section className="header">
+        <section className="header-top">
+          <section className="header-top__logo">
+            <a href="/" className="header-logo">Game</a>
+          </section>
+          <section className="header-top__navbar">
+            <section className="header-top__navigation">
+              <Navbar />
+            </section>
+            <hr className="header-top__seperator" />
+          </section>
+        </section>
+        {/* <section className="header-bottom">
+          <section className="header-bottom__phone">
+            666
+          </section>
+          <section className="header-bottom__email">
+            Beld
+          </section>
+        </section> */}
+      </section>
     );
 }
