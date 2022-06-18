@@ -4,6 +4,8 @@ import { Header } from "./components/header";
 import Footer  from "./components/footer";
 import { HomePage } from "./pages/home-page";
 import { GamePage } from "./pages/game-page";
+import { Exclusive } from "./pages/Exclusive";
+
 import { Provider } from "react-redux";
 import { store } from "./store";
 
@@ -24,6 +26,11 @@ function App() {
               <Route exact path="/">
                 <HomePage />
               </Route>
+
+              <Route exact path="/Exclusive">
+                <Exclusive />
+              </Route>
+
             </Switch>
             <Route> <Footer />
                         </Route>
