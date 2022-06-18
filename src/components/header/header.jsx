@@ -1,14 +1,6 @@
 import React from "react";
 import { Navbar } from '../../components' ;
-
 import "./header.css";
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    Button,
-} from "@material-ui/core";
-import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (

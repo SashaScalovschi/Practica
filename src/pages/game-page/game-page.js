@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useSelector} from 'react-redux';
-// import { GameBuy } from "../../components/game-buy";
 import { GameCover } from "../../components/game-cover/game-cover";
 import { GameGenre } from "../../components/game-genre";
 import "./game-page.css";
