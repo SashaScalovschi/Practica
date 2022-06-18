@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import { Header } from "./components/header";
+import Footer  from "./components/footer";
 import { HomePage } from "./pages/home-page";
 import { GamePage } from "./pages/game-page";
 import { Provider } from "react-redux";
@@ -28,6 +29,8 @@ function App() {
                 <HomePage />
               </Route>
             </Switch>
+            <Route> <Footer />
+                        </Route>
         </div>
       </Router>
     </Provider>
