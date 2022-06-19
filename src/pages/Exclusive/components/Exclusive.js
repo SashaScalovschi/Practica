@@ -14,9 +14,7 @@ export const Exclusive = () => {
     const historyPoint = history.slice(0, stepNumber + 1);
     const current = historyPoint[stepNumber];
     const squares = [...current];
-    // return if won or occupied
     if (winner || squares[i]) return;
-    // select square
     squares[i] = xO;
     setHistory([...historyPoint, squares]);
     setStepNumber(historyPoint.length);
@@ -55,5 +53,3 @@ export const Exclusive = () => {
     </>
   );
 };
-
-// export default Exclusive;
