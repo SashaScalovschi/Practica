@@ -6,6 +6,7 @@ import { HomePage } from "./pages/home-page";
 import { GamePage } from "./pages/game-page";
 import { Exclusive } from "./pages/Exclusive";
 import { Contact } from "./pages/Contact/Contact";
+import { About } from "./pages/About";
 // import "./App.css"
 
 import { Provider } from "react-redux";
@@ -35,6 +36,10 @@ function App() {
 
               <Route exact path="/Contact">
                 <Contact />
+              </Route>
+
+              <Route exact path="/About">
+                <About />
               </Route>
 
             </Switch>

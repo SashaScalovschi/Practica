@@ -26,5 +26,6 @@ a {
 }
 
 .secondary-text {
+  margin-top: 5px;
   color: rgb(80, 82, 84);
 }

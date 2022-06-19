@@ -1,0 +1,23 @@
+.parp{
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 3px;
+    margin-right: 52px;
+    font-size: 1.305em;
+    margin: 12px;
+    
+}
+.grop{
+    text-align: justify;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+
+.abo{
+    margin-top: 15px;
+    border-style: outset ;
+    border-color: black;
+    border-radius: 5px;
+    background-color: rgb(19, 19, 19);
+}
