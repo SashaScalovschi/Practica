@@ -1,0 +1,70 @@
+.team .items {
+  transition: 0.5s;
+  margin-top: 10px;
+  width: 466px;
+  margin-right: 20px;
+}
+.team .img {
+  position: relative;
+
+}
+.team img {
+  width: 466px;
+  height: 435px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+}
+.overlay i {
+  background-color: #000;
+  color: #fff;
+  margin: 5px;
+  transition: 0.5s;
+  
+}
+.team .details {
+  padding: 30px;
+  text-align: center;
+  
+}
+.team .details h2 {
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+  
+}
+.team .details p {
+  font-size: 15px;
+  color: rgb(131, 89, 58);
+  margin-top: 10px;
+  transition: 0.5s;
+  
+}
+.team .items:hover {
+  background-color: rgb(97, 86, 52);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+}
+.team .items:hover p {
+  color: #fff;
+  
+}
+.team .items:hover .overlay {
+  opacity: 3;
+
+}
+.team .items:hover .overlay i:hover {
+  background-color: whitesmoke;
+  color: #fff;
+
+}

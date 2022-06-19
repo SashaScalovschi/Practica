@@ -5,6 +5,8 @@ import Footer  from "./components/footer";
 import { HomePage } from "./pages/home-page";
 import { GamePage } from "./pages/game-page";
 import { Exclusive } from "./pages/Exclusive";
+import { Contact } from "./pages/Contact/Contact";
+// import "./App.css"
 
 import { Provider } from "react-redux";
 import { store } from "./store";
@@ -29,6 +31,10 @@ function App() {
 
               <Route exact path="/Exclusive">
                 <Exclusive />
+              </Route>
+
+              <Route exact path="/Contact">
+                <Contact />
               </Route>
 
             </Switch>
