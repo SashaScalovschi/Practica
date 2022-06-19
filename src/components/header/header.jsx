@@ -17,6 +17,14 @@ export const Header = () => {
             <hr className="header-top__seperator" />
           </section>
         </section>
+        {/* <section className="header-bottom">
+          <section className="header-bottom__phone">
+            666
+          </section>
+          <section className="header-bottom__email">
+            Beld
+          </section>
+        </section> */}
       </section>
     );
 }
