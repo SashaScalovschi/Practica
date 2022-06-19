@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { calculateWinner } from "../helper";
 import Board from "./Board";
-// import '../index.css'
+import '../index.css'
 
 export const Exclusive = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -30,7 +30,7 @@ export const Exclusive = () => {
 
   const renderMoves = () =>
     history.map((_step, move) => {
-      const destination = move ? `Go to move #${move}` : "Go to Start";
+      const destination = move ? `Хід №${move}` : "Початок гри";
       return (
         <li key={move}>
           <button onClick={() => jumpTo(move)}>{destination}</button>
@@ -40,14 +40,17 @@ export const Exclusive = () => {
 
   return (
     <>
-      <h1>React Tic Tac Toe - With Hooks</h1>
+          <h1> Хрестики Нолики </h1>
+
+    <div className="body">
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
-          <h3>History</h3>
+          <h3>Історія ходів</h3>
           {renderMoves()}
         </div>
-        <h3>{winner ? "Winner: " + winner : "Next Player: " + xO}</h3>
+        <h3>{winner ? "Виграв: " + winner : "Наступний хід за: " + xO}</h3>
+      </div>
       </div>
     </>
   );
